@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "kind": "historical_private_project_summary",
+  "snapshot_date": "2026-10-15",
+  "compiled_for_release_date": "2026-10-15",
+  "private_project_rerun_during_publication": false,
+  "related_tests_passed": 109,
+  "full_suite_tests_passed": 772,
+  "full_suite_warnings": 4,
+  "report_service_before_statement_percent_reported": 16.4,
+  "before_coverage_raw_report_published": false,
+  "coverage_files": {
+    "app/repositories/report_repository.py": {
+      "statements": 236,
+      "covered_statements": 236,
+      "branches": 66,
+      "covered_branches": 66
+    },
+    "app/services/report_service.py": {
+      "statements": 330,
+      "covered_statements": 330,
+      "branches": 80,
+      "covered_branches": 80
+    }
+  },
+  "scope_note": "Two target files only. Related and full-suite test counts overlap and must not be added.",
+  "limitations": [
+    "Raw private project and original logs are not published.",
+    "Historical results were not rerun during this documentation publication.",
+    "100 percent coverage does not prove absence of defects."
+  ]
+}

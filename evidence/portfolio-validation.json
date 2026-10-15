@@ -1,0 +1,44 @@
+{
+  "validation_date": "2026-10-15",
+  "scope": "Public portfolio examples only; no private project tests executed.",
+  "python": "3.13.15",
+  "checks": [
+    {
+      "example": "money_regression.py",
+      "mode": "before",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "test_methods": 2,
+      "assertion_failures": 3,
+      "result": "expected_assertion_failure"
+    },
+    {
+      "example": "money_regression.py",
+      "mode": "after",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "test_methods": 2,
+      "assertion_failures": 0,
+      "result": "passed"
+    },
+    {
+      "example": "report_aggregation.py",
+      "mode": "before",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "test_methods": 4,
+      "assertion_failures": 3,
+      "result": "expected_assertion_failure"
+    },
+    {
+      "example": "report_aggregation.py",
+      "mode": "after",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "test_methods": 4,
+      "assertion_failures": 0,
+      "result": "passed"
+    }
+  ],
+  "private_project_rerun": false
+}

@@ -1,0 +1,53 @@
+{
+  "compiled_date": "2026-10-15",
+  "public_content_type": "curated_summaries_and_synthetic_examples",
+  "independently_audited": false,
+  "sources": [
+    {
+      "id": "audit-summary",
+      "source_filename": "result.json",
+      "sha256": "1437d909fb177b46b1ae7035157d3fb07894da1cd14b07ef85522adfc1f135a3",
+      "purpose": "专项交付统计来源",
+      "original_published": false
+    },
+    {
+      "id": "audit-coverage",
+      "source_filename": "full_coverage.json",
+      "sha256": "f1f7428bf999c66f305eca86c26b5378e4d4228a037fcc8c1e9c56c19f7a826c",
+      "purpose": "两个报表目标文件的语句与分支计数来源",
+      "original_published": false
+    },
+    {
+      "id": "historical-delivery",
+      "source_filename": "DELIVERY.md",
+      "sha256": "185eb8d378c5c634edc0e31d654bc3fdc1ab72e693750b6ded43d27936611388",
+      "purpose": "历史 599 passed 与 248 passed 基线",
+      "original_published": false
+    },
+    {
+      "id": "historical-performance",
+      "source_filename": "PERF_REPORT.md",
+      "sha256": "8a46f8a11e25e8d945d55c58285d0d10a935d85fd8410594e5cfd623bb621c95",
+      "purpose": "历史延迟、负载规模及并发正确性记录",
+      "original_published": false
+    },
+    {
+      "id": "historical-local-verification",
+      "source_filename": "LOCAL_VERIFY_RECORD.md",
+      "sha256": "5b92f43e3c5aff67825171f348fdb89b0b91cd192619bbd13303ecdb4e0d865d",
+      "purpose": "历史本地冒烟与未完成 Docker 运行验证的范围说明",
+      "original_published": false
+    }
+  ],
+  "sanitized_excerpts": [
+    {
+      "source_id": "historical-delivery",
+      "text": "599 passed, 3 warnings in 29.65s"
+    },
+    {
+      "source_id": "historical-delivery",
+      "text": "248 passed, 351 deselected"
+    }
+  ],
+  "note": "Hashes identify retained local source files. They are not independent verification of historical results."
+}

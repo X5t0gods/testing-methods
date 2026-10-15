@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+.env
+.env.*
+*.log
+*.sql
+*.dump
+*.db
+*.sqlite*
+*.pem
+*.key
+artifacts/
+.local/
+.DS_Store
+Thumbs.db

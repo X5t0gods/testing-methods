@@ -1,0 +1,164 @@
+[
+  {
+    "id": "B01",
+    "title": "工程骨架与横切",
+    "path": "checklists/B01-foundation.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B02",
+    "title": "认证与权限",
+    "path": "checklists/B02-authentication.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B03",
+    "title": "商品与基础数据",
+    "path": "checklists/B03-products.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B04",
+    "title": "收银主链路结算",
+    "path": "checklists/B04-checkout.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B05",
+    "title": "售后与交班",
+    "path": "checklists/B05-after-sales.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B06",
+    "title": "库存查询与流水",
+    "path": "checklists/B06-inventory-query.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B07",
+    "title": "盘点、报损与调拨",
+    "path": "checklists/B07-inventory-operations.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B08",
+    "title": "采购与收货",
+    "path": "checklists/B08-purchasing.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B09",
+    "title": "供应商与对账",
+    "path": "checklists/B09-suppliers.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B10",
+    "title": "会员",
+    "path": "checklists/B10-members.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B11",
+    "title": "促销与优惠券",
+    "path": "checklists/B11-promotions.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B12",
+    "title": "报表",
+    "path": "checklists/B12-reports.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B13",
+    "title": "智能分析 BI",
+    "path": "checklists/B13-business-intelligence.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B14",
+    "title": "系统管理",
+    "path": "checklists/B14-system-management.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "B15",
+    "title": "定时任务、备份与日志",
+    "path": "checklists/B15-scheduled-jobs.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F01",
+    "title": "前端工程底座与请求层",
+    "path": "checklists/F01-frontend-foundation.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F02",
+    "title": "Mock 与类型契约",
+    "path": "checklists/F02-frontend-contracts.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F03",
+    "title": "登录与布局",
+    "path": "checklists/F03-frontend-login.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F04",
+    "title": "收银台",
+    "path": "checklists/F04-frontend-pos.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F05",
+    "title": "商品与基础数据页",
+    "path": "checklists/F05-frontend-products.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F06",
+    "title": "库存页",
+    "path": "checklists/F06-frontend-inventory.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F07",
+    "title": "采购与供应商页",
+    "path": "checklists/F07-frontend-purchasing.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F08",
+    "title": "会员页",
+    "path": "checklists/F08-frontend-members.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F09",
+    "title": "促销与优惠券页",
+    "path": "checklists/F09-frontend-promotions.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F10",
+    "title": "报表与看板页",
+    "path": "checklists/F10-frontend-reports.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F11",
+    "title": "BI 分析页",
+    "path": "checklists/F11-frontend-bi.md",
+    "status": "test_design_not_execution_result"
+  },
+  {
+    "id": "F12",
+    "title": "系统管理页",
+    "path": "checklists/F12-frontend-system.md",
+    "status": "test_design_not_execution_result"
+  }
+]
