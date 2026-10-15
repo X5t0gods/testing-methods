@@ -114,11 +114,35 @@ def validate_evidence_and_cards():
             error(f"Module card missing: {card['id']}")
 
 
+def validate_regression_reports():
+    for path in (ROOT / "evidence").glob("final-regression-*.json"):
+        report = json.loads(path.read_text(encoding="utf-8"))
+        checks = report["checks"]
+        full = checks["backend_full"]
+        if full["status"] == "initialization_aborted":
+            if full["exit_code"] == 0 or full["coverage_total_generated"]:
+                error(f"Aborted run has conflicting success metadata: {path.name}")
+            for name in ("passed", "failed", "errors", "skipped", "coverage_total_percent"):
+                if full[name] is not None:
+                    error(f"Unavailable statistic must remain null: {path.name}:{name}")
+        lint = checks["backend_lint"]
+        if sum(lint["rules"].values()) != lint["diagnostics"]:
+            error(f"Ruff diagnostic breakdown does not add up: {path.name}")
+        mapping = checks["frontend_api_mock_mapping"]
+        if mapping["missing"] != len(mapping["missing_mappings"]) or not 0 <= mapping["missing"] <= mapping["scanned"]:
+            error(f"Mock gap counts disagree: {path.name}")
+        if mapping["missing"] and mapping["status"] == "passed":
+            error(f"Mock gaps cannot be described as passed: {path.name}")
+        if report["business_tests_rerun_during_publication"]:
+            error(f"Retained business results mislabeled as a publication rerun: {path.name}")
+
+
 def main():
     files = files_under_root()
     validate_text_files(files)
     validate_metadata()
     validate_evidence_and_cards()
+    validate_regression_reports()
     if ERRORS:
         print("\n".join(ERRORS))
         return 1

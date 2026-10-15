@@ -1,0 +1,62 @@
+{
+  "compiled_date": "2026-10-15",
+  "release_version": "1.1.0",
+  "independently_audited": false,
+  "business_tests_rerun_during_publication": false,
+  "sources": [
+    {
+      "id": "final-regression",
+      "kind": "retained_local_record",
+      "sha256": "333997d5b2fa6410523572b119da14e8c13c524342c573b1079e24cf76da2b07",
+      "original_published": false
+    },
+    {
+      "id": "frontend",
+      "kind": "retained_local_record",
+      "sha256": "d5d1105b23212dd83cbf4c9c7e171df8fe49029085de2c2c6597cb767d9d23e0",
+      "original_published": false
+    },
+    {
+      "id": "products-members-promotions",
+      "kind": "retained_local_record",
+      "sha256": "e034b5c4f2d0c739ce52dbc0dbd121d2b827c1d6c90359022079afd1f17280e7",
+      "original_published": false
+    },
+    {
+      "id": "inventory-purchase-suppliers",
+      "kind": "retained_local_record",
+      "sha256": "e2d9f8d6b7c3f2aaefd2f93ec2debfcfffac5412f16fa07594bc951a6b22f6a3",
+      "original_published": false
+    },
+    {
+      "id": "system-jobs",
+      "kind": "retained_local_record",
+      "sha256": "6528fe07b9c4d00a2762acf5d78ddd5641733c44d9989012f205a71e4228c30f",
+      "original_published": false
+    },
+    {
+      "id": "checkout-after-sales-auth",
+      "kind": "retained_local_record",
+      "sha256": "12bbf865dbae08230fe01c02c7b6c292118fb111ce2a8f2d18614d803d94598d",
+      "original_published": false
+    },
+    {
+      "id": "checkout-core",
+      "kind": "retained_local_record",
+      "sha256": "54b40516d7ae6207bef3973d94b642364c280e2afa94ee298caa23bc11dfe783",
+      "original_published": false
+    },
+    {
+      "id": "report-bi-audit",
+      "kind": "retained_private_artifact",
+      "sha256": "1437d909fb177b46b1ae7035157d3fb07894da1cd14b07ef85522adfc1f135a3",
+      "original_published": false
+    }
+  ],
+  "evidence_levels": {
+    "final_check_exit_codes_and_selected_outputs": "retained_command_execution_records",
+    "ruff_rule_breakdown_and_stage_counts": "module_or_final_completion_summaries",
+    "report_coverage_counts": "retained_private_coverage_json_summarized_in_v1.0.0"
+  },
+  "note": "Fingerprints support comparison by the material holder; they do not independently prove the historical results. Raw records are not public."
+}

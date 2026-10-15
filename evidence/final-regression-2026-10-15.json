@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "report_date": "2026-10-15",
+  "reporting_timezone": "Asia/Shanghai",
+  "release_version": "1.1.0",
+  "source_type": "retained_execution_outputs_and_module_completion_records",
+  "business_tests_rerun_during_publication": false,
+  "final_acceptance": "not_confirmed",
+  "checks": {
+    "backend_full": {
+      "command": "python -m pytest -q --cov=app --cov-report=term-missing",
+      "exit_code": 4,
+      "status": "initialization_aborted",
+      "error_type": "OperationalError",
+      "passed": null,
+      "failed": null,
+      "errors": null,
+      "skipped": null,
+      "coverage_total_percent": null,
+      "coverage_total_generated": false,
+      "sanitized_excerpt": "ERROR: 无法初始化隔离测试库；错误类型：OperationalError",
+      "source_id": "final-regression",
+      "root_cause": "not_determined_by_the_record"
+    },
+    "backend_collection": {
+      "command": "python -m pytest --collect-only -q",
+      "exit_code": 0,
+      "status": "collection_only",
+      "collected": 1020,
+      "sanitized_excerpt": "1020 tests collected in 0.36s",
+      "source_id": "final-regression"
+    },
+    "backend_lint": {
+      "command": "python -m ruff check app scripts",
+      "exit_code": 1,
+      "status": "diagnostics_found",
+      "diagnostics": 64,
+      "rules": {
+        "E501": 55,
+        "I001": 7,
+        "B904": 1,
+        "SIM112": 1
+      },
+      "rule_counts_source": "completion_summary",
+      "sanitized_excerpt": "Found 64 errors.",
+      "source_id": "final-regression"
+    },
+    "frontend_types": {
+      "command": "npm run type-check",
+      "exit_code": 0,
+      "status": "passed",
+      "underlying_command": "vue-tsc --noEmit",
+      "source_id": "final-regression"
+    },
+    "frontend_api_mock_mapping": {
+      "command": "npm run check:api",
+      "exit_code": 0,
+      "status": "completed_with_gaps",
+      "scanned": 131,
+      "missing": 2,
+      "missing_mappings": [
+        {
+          "method": "POST",
+          "path": "/bi/compare/batch"
+        },
+        {
+          "method": "GET",
+          "path": "/suppliers/options"
+        }
+      ],
+      "sanitized_excerpt": "missing=2 / total=131",
+      "source_id": "final-regression"
+    },
+    "latest_frontend_real_backend_response": {
+      "status": "not_verified",
+      "reason": "backend_connection_failed",
+      "source_id": "frontend"
+    }
+  },
+  "stage_results": [
+    {
+      "source_id": "checkout-core",
+      "module": "收银结算",
+      "related_passed": 91,
+      "then_full_passed": 692
+    },
+    {
+      "source_id": "checkout-after-sales-auth",
+      "module": "售后与认证",
+      "related_passed": 203,
+      "then_full_passed": 723
+    },
+    {
+      "source_id": "report-bi-audit",
+      "module": "报表与BI",
+      "related_passed": 109,
+      "then_full_passed": 772,
+      "then_full_warnings": 4
+    },
+    {
+      "source_id": "system-jobs",
+      "module": "系统与后台任务",
+      "related_passed": 251,
+      "another_core_subset_passed": 43,
+      "then_full_passed": 854,
+      "then_full_coverage_percent_reported": 91.7
+    },
+    {
+      "source_id": "inventory-purchase-suppliers",
+      "module": "库存采购供应商",
+      "related_backend_passed": 80,
+      "frontend_regression_passed": 25,
+      "browser_flows_passed": 7,
+      "browser_uncaught_exceptions": 0,
+      "then_full_passed": 926,
+      "inventory_reconciliation_mismatches": 0,
+      "inventory_rows_in_that_fixture": 21,
+      "flow_rows_in_that_fixture": 32
+    },
+    {
+      "source_id": "products-members-promotions",
+      "module": "商品会员促销补齐",
+      "related_passed": 215,
+      "frontend_regression_passed": 24,
+      "then_full_passed": 1020
+    }
+  ],
+  "comparability": {
+    "stage_counts_may_overlap": true,
+    "stage_source_snapshots_are_not_identical": true,
+    "do_not_sum_test_counts": true,
+    "fixed_bugfix_baseline_commit_available": false,
+    "workspaces_had_uncommitted_changes": true,
+    "historical_baseline_passed": 599,
+    "historical_baseline_coverage_percent": 83.03
+  },
+  "limitations": [
+    "Stage completion records are not a successful final acceptance run.",
+    "Collection does not execute tests. Missing statistics remain null, not zero.",
+    "Public evidence is curated. Raw source, logs, databases and conversations are not published.",
+    "The publication validates the portfolio only and does not rerun the business system."
+  ]
+}

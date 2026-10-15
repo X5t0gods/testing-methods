@@ -2,6 +2,8 @@
 
 本页优先呈现能够追溯到现有材料的结果。数字是历史记录，不代表当前持续集成状态，也不构成“系统没有缺陷”的证明。
 
+最新的[2026-10-15 收尾回归报告](../reports/2026-10-15-final-regression.md)已收录各模块阶段验证。其最终后端运行因测试库初始化失败中止，没有新的全量通过数或 TOTAL；前端类型检查通过，Ruff 和 Mock 映射仍有待处理项。下面保留此前专项指标，不能作为最终收尾结果替代。
+
 ## 1. 报表与 BI 专项快照
 
 覆盖率文件的记录日期为 **2026-10-15**。脱敏摘要见 [report-bi-audit.json](../evidence/report-bi-audit.json)，来源文件指纹见 [provenance.json](../evidence/provenance.json)。

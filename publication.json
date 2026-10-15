@@ -3,10 +3,13 @@
   "url": "https://github.com/X5t0gods/testing-methods",
   "visibility": "public",
   "default_branch": "main",
-  "version": "1.0.0",
-  "tag": "v1.0.0",
+  "version": "1.1.0",
+  "tag": "v1.1.0",
   "release_date": "2026-10-15",
   "audience": "HR and technical interviewers",
+  "latest_report": "reports/2026-10-15-final-regression.md",
+  "latest_report_evidence": "evidence/final-regression-2026-10-15.json",
+  "latest_business_acceptance": "not_confirmed",
   "language": "zh-CN",
   "reuse_repository_for_future_versions": true
 }
